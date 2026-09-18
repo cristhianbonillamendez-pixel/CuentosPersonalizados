@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — Cuentos Mágicos</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fdf8ff;
+    --fg: #1c1b20;
+    --muted: #55505e;
+    --accent: #4b3f82;
+    --card: #ffffff;
+    --border: #e4defa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141318;
+      --fg: #e6e1e9;
+      --muted: #b8b2c2;
+      --accent: #c9bffc;
+      --card: #1f1e26;
+      --border: #322f3d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+  }
+  header {
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 1.7rem;
+    margin: 0 0 8px;
+    color: var(--accent);
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 4px 0;
+  }
+  section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 0;
+    color: var(--accent);
+  }
+  ul {
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  strong { color: var(--fg); }
+  .footnote {
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-top: 1px dashed var(--border);
+    margin-top: 32px;
+    padding-top: 16px;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Política de Privacidad de Cuentos Mágicos</h1>
+  <p class="meta">Última actualización: 18 de septiembre de 2026</p>
+  <p class="meta">Responsable de esta app: BonMenDev / Cristhian Bonilla</p>
+  <p class="meta">Contacto de privacidad: <a href="mailto:bonmendev.apps@gmail.com">bonmendev.apps@gmail.com</a></p>
+  <p>Esta política describe, con la mayor precisión posible, qué datos maneja la app Cuentos Mágicos hoy, tal como está efectivamente implementada — no describe planes futuros ni funciones que todavía no existen en la app publicada.</p>
+</header>
+
+<section>
+  <h2>1. A quién está dirigida esta app</h2>
+  <p>Cuentos Mágicos está diseñada para que un <strong>padre, madre o adulto a cargo</strong> la use para crear cuentos personalizados para un niño o niña.</p>
+  <p>La app no está pensada para que un niño o niña la use sin supervisión, no le pedimos ningún dato directamente a un niño o niña, y en ningún momento el niño o niña es tratado como titular de una cuenta: quien usa la app, decide qué información ingresar y gestiona los perfiles es siempre el adulto.</p>
+</section>
+
+<section>
+  <h2>2. Tu identidad en la app (identificador anónimo, no una cuenta)</h2>
+  <p>Cuentos Mágicos <strong>no te pide crear una cuenta</strong> ni te pide tu nombre, correo o contraseña. Para poder ofrecerte una cuota de cuentos gratuitos por mes y para verificar tus compras dentro de la app, usamos <strong>Firebase Authentication en modo anónimo</strong>: la primera vez que abrís la app, se genera automáticamente un identificador técnico (un UID) asociado a esa instalación de la app en tu dispositivo.</p>
+  <p>Este identificador:</p>
+  <ul>
+    <li>No incluye tu nombre, correo, ni ningún dato personal directo tuyo ni del niño o niña.</li>
+    <li>Es distinto de cualquier dato que vos ingreses sobre el perfil infantil (sección 3) — nunca mezclamos ese identificador técnico con el nombre/apodo que le pusiste a un perfil.</li>
+    <li>Se usa únicamente para: (a) autenticar tus solicitudes al backend de forma verificable, (b) contar cuántos cuentos generaste este mes contra el límite gratuito, y (c) verificar y recordar si tenés una suscripción Premium activa.</li>
+    <li>Si desinstalás la app o borrás sus datos a nivel del sistema operativo, ese identificador se pierde y, al volver a instalar la app, se genera uno nuevo.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>3. Perfiles infantiles: qué guardamos y quién lo ingresa</h2>
+  <p>Todo perfil infantil lo creás y lo llenás <strong>vos, el adulto</strong>. Para cada perfil, la app guarda:</p>
+  <ul>
+    <li>Un nombre o apodo (hasta 30 caracteres) — nunca pedimos el nombre legal completo, y no validamos que sea un nombre real.</li>
+    <li>Un rango de edad amplio (2-3, 4-5, 6-7, 8-9 o 10-12 años) — <strong>nunca una fecha de nacimiento exacta</strong>.</li>
+    <li>Hasta 5 intereses, elegidos de una lista predefinida (dinosaurios, animales, espacio, fútbol, etc.) o, opcionalmente, un interés personalizado escrito por vos (hasta 50 caracteres).</li>
+  </ul>
+  <p><strong>Nunca pedimos ni guardamos</strong>, para ningún perfil: foto, ubicación, escuela, dirección, teléfono, correo electrónico del niño/a, ni ningún dato biométrico.</p>
+  <p>Podés crear varios perfiles infantiles en el mismo dispositivo (por ejemplo, uno por cada hijo/a).</p>
+</section>
+
+<section>
+  <h2>4. Los cuentos generados</h2>
+  <p>Cada cuento que generás para un perfil se guarda junto con: su título, resumen, texto completo, el tema/tono/objetivo que elegiste, la duración estimada de lectura, y si lo marcaste como favorito.</p>
+</section>
+
+<section>
+  <h2>5. Dónde se guarda todo esto: en tu dispositivo, no en la nube</h2>
+  <p>Los perfiles infantiles y los cuentos generados se guardan <strong>localmente en tu dispositivo</strong>, en una base de datos SQLite propia de la app. En esta versión de la app <strong>no hay sincronización</strong> a ninguna cuenta, servidor propio ni servicio en la nube: esa información vive únicamente en tu teléfono o tablet.</p>
+  <p>Esto también significa que si desinstalás la app, borrás sus datos, o cambiás de dispositivo sin haber hecho vos mismo/a un respaldo, esa información (perfiles y cuentos) se pierde y no podemos recuperarla por vos — no tenemos una copia en ningún servidor.</p>
+  <p>Algunas preferencias adicionales (tamaño de letra de lectura, modo oscuro del lector, idioma y tema visual de la app, si completaste la introducción inicial, y un resumen local de tu estado de Premium) se guardan también solo en tu dispositivo, de forma separada de los perfiles y cuentos.</p>
+</section>
+
+<section>
+  <h2>6. Qué se envía a nuestro servidor para generar un cuento, y por qué</h2>
+  <p>Para generar el <strong>texto</strong> de un cuento — y únicamente para eso — la app envía a nuestro backend (alojado sobre Firebase Cloud Functions):</p>
+  <ul>
+    <li>El nombre/apodo del perfil, su rango de edad y sus intereses (sección 3).</li>
+    <li>El tema, el objetivo/lección, el tono y la duración que elegiste para ese cuento en particular.</li>
+    <li>El idioma de la app.</li>
+    <li>Un identificador de la solicitud (un código técnico para evitar generar o cobrarte el mismo cuento dos veces si hay un reintento de red) — propio de cada solicitud, no del perfil ni del niño/a.</li>
+    <li>Tu identificador anónimo (sección 2), como parte de la verificación de que la solicitud es tuya y de que no superaste tu cuota gratuita.</li>
+  </ul>
+  <p>Queremos ser explícitos: <strong>estos datos sí salen de tu dispositivo</strong>. No afirmamos en ningún otro lugar de esta política que todo permanece en el teléfono — lo que permanece únicamente en el dispositivo son los perfiles y cuentos ya guardados (sección 5); lo que se envía para generar un cuento nuevo es lo que se detalla acá.</p>
+  <p>Nuestro backend usa esos datos solamente para construir la instrucción que le pide el cuento al proveedor de inteligencia artificial (sección 7) y para devolverte el resultado — no los usa para ningún otro fin, y no los guarda de forma permanente (sección 10).</p>
+</section>
+
+<section>
+  <h2>7. El proveedor de inteligencia artificial: Google Gemini</h2>
+  <p>Hoy, Cuentos Mágicos usa exclusivamente la <strong>API de Google Gemini</strong> para redactar el texto de los cuentos. Nuestro backend le envía la instrucción con los datos descritos en la sección 6 y recibe únicamente el texto resultante — no le enviamos ningún otro dato tuyo (ni tu identificador anónimo, ni información de pago).</p>
+  <p>Aunque nuestro código está preparado para poder usar otros proveedores de IA en el futuro, <strong>hoy en producción solo se usa Google Gemini</strong> — esta política se actualizará si eso cambia.</p>
+  <p>Es importante que sepas que, según los términos públicos de Google, el <strong>nivel gratuito</strong> de la API de Gemini puede permitir que Google use el contenido enviado (la instrucción y la respuesta) para mejorar sus propios productos, lo que puede incluir revisión humana — algo que no ocurre en el nivel de pago de esa misma API. No podemos garantizarte, únicamente a partir de esta política, cuál de los dos niveles está activo en un momento dado; si esto es especialmente importante para vos, podés escribirnos (sección 17) para confirmarlo.</p>
+</section>
+
+<section>
+  <h2>8. Qué NO recopilamos</h2>
+  <p>Verificamos explícitamente, contra el código real de la app, que Cuentos Mágicos <strong>no solicita ni recopila</strong>:</p>
+  <ul>
+    <li>Tu ubicación (precisa ni aproximada).</li>
+    <li>Fotos, video ni acceso a tu galería.</li>
+    <li>Tus contactos.</li>
+    <li>Grabaciones de audio ni acceso al micrófono.</li>
+    <li>Acceso a la cámara.</li>
+    <li>Datos biométricos (huella, reconocimiento facial, etc.).</li>
+    <li>Ningún dato de navegación fuera de la propia app.</li>
+  </ul>
+  <p>La app tampoco integra ningún SDK de publicidad ni de seguimiento publicitario — <strong>no mostramos anuncios</strong>.</p>
+</section>
+
+<section>
+  <h2>9. Compras dentro de la app (suscripción Premium)</h2>
+  <p>Si elegís suscribirte a la versión Premium, esa compra se procesa enteramente a través de <strong>Google Play Billing</strong>. Nosotros nunca vemos ni almacenamos el número de tu tarjeta ni ningún otro dato de pago — eso lo maneja Google Play directamente, bajo su propia política de privacidad.</p>
+  <p>Nuestro backend sí recibe, para verificar y activar tu compra: el identificador del producto adquirido (por ejemplo, "premium mensual") y el token de compra que Google Play genera para esa transacción. Ese token <strong>nunca se guarda tal cual</strong>: guardamos únicamente una huella criptográfica (hash) de él, suficiente para reconocer si el mismo comprobante de compra vuelve a aparecer (por ejemplo, al reinstalar la app), pero que no permite reconstruir el token original.</p>
+</section>
+
+<section>
+  <h2>10. Cómo y cuánto tiempo se conservan tus datos</h2>
+  <ul>
+    <li><strong>En tu dispositivo</strong> (perfiles, cuentos, preferencias): se conservan indefinidamente hasta que vos los borres (sección 14) o desinstales la app. No fijamos un plazo de borrado automático.</li>
+    <li><strong>En nuestro backend</strong>: no mantenemos hoy una base de datos permanente con tus perfiles, tus cuentos ni su contenido. El texto de un cuento recién generado se mantiene brevemente en la memoria del servidor (unos minutos) únicamente para evitar generarlo dos veces si tu conexión falla justo después de pedirlo, y se descarta después. El conteo de cuántos cuentos generaste este mes y el estado de tu suscripción Premium también se manejan hoy en memoria del servidor, no en una base de datos persistente. No establecemos un período de retención adicional porque, hoy, no hay una base de datos donde algo quede almacenado más allá de eso.</li>
+    <li><strong>Registros técnicos (logs) del servidor</strong>: registramos únicamente datos técnicos mínimos para operar y depurar el servicio — por ejemplo, el identificador de cada solicitud, cuánto tardó, si tuvo éxito, y la cantidad de palabras del cuento generado. <strong>Nunca registramos</strong> el nombre del perfil, el contenido del cuento, el token de compra (ni su huella), ni ninguna credencial. Estos registros los conserva la infraestructura de Google Cloud según sus propias políticas de retención, no según un plazo que definamos nosotros.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>11. Seguridad</h2>
+  <p>Toda comunicación entre la app y nuestro backend viaja cifrada (HTTPS) — la app está configurada para rechazar directamente cualquier conexión sin cifrar en la versión publicada. El token de compra de Google Play, como se explicó en la sección 9, nunca se almacena en texto plano.</p>
+</section>
+
+<section>
+  <h2>12. Con quién compartimos datos</h2>
+  <p>No vendemos, alquilamos ni compartimos los datos de tu perfil infantil ni de tus cuentos con terceros con fines publicitarios ni de ningún otro tipo. Los únicos terceros que reciben datos, y solo lo estrictamente necesario para que la app funcione, son:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> (Authentication y Cloud Functions): aloja nuestra identidad anónima y nuestro backend.</li>
+    <li><strong>Google Gemini</strong>: recibe los datos descritos en las secciones 6-7 para redactar el texto del cuento.</li>
+    <li><strong>Google Play Billing</strong>: procesa tu compra si te suscribís a Premium.</li>
+  </ul>
+  <p>Ningún dato pasa por redes de publicidad, brokers de datos, ni herramientas de analítica de terceros — la app no integra ninguna.</p>
+</section>
+
+<section>
+  <h2>13. Narración por voz</h2>
+  <p>La función de "escuchar" un cuento usa el sintetizador de voz (texto-a-voz) que ya viene instalado en tu propio dispositivo. La app le entrega el texto del cuento directamente a ese componente del sistema operativo — no grabamos audio, ni enviamos el texto a ningún servicio de narración en la nube propio de Cuentos Mágicos.</p>
+</section>
+
+<section>
+  <h2>14. Cómo eliminar tus datos</h2>
+  <p>Desde <strong>Ajustes → "Eliminar todos mis datos"</strong> podés borrar, en cualquier momento y sin necesidad de contactarnos, todos los perfiles infantiles, todos los cuentos generados, y tu preferencia de tamaño de letra del lector, guardados en tu dispositivo. Esta acción es inmediata y local.</p>
+  <p>Esta acción <strong>no</strong> borra tu identificador anónimo (se sigue usando para tu cuota mensual) ni cancela una suscripción Premium activa: una suscripción de Google Play sigue vigente hasta que la canceles por separado, directamente desde Google Play (Play Store → Suscripciones).</p>
+  <p>Como se explica en la sección 10, hoy no mantenemos una base de datos permanente con tus datos en el servidor, así que no existe hoy un proceso adicional de "borrado en el servidor" más allá de lo que ya ocurre automáticamente con el tiempo.</p>
+</section>
+
+<section>
+  <h2>15. Menores de edad</h2>
+  <p>Como se explicó en la sección 1, la app está dirigida a personas adultas. No recopilamos deliberadamente datos directamente de niños o niñas: el nombre/apodo, el rango de edad y los intereses de un perfil infantil los ingresa el adulto a cargo, no el niño o niña.</p>
+</section>
+
+<section>
+  <h2>16. Cambios a esta política</h2>
+  <p>Podemos actualizar esta política a medida que la app evolucione — en particular, si cambia el proveedor de inteligencia artificial usado (sección 7), si empezamos a sincronizar datos en la nube, o si agregamos alguna función nueva que recopile un dato distinto a los descritos acá. Cuando eso ocurra, actualizaremos la fecha al inicio de este documento.</p>
+</section>
+
+<section>
+  <h2>17. Contacto</h2>
+  <p>Si tenés preguntas sobre esta política o sobre tus datos, escribinos a: <a href="mailto:bonmendev.apps@gmail.com">bonmendev.apps@gmail.com</a>.</p>
+</section>
+
+<p class="footnote">
+  Este documento describe el comportamiento real de la app verificado directamente contra su código fuente.
+</p>
+
+</div>
+</body>
+</html>
